@@ -1,3 +1,7 @@
+#Read the Data
+##This assumes that the data file is the working directory
+
+
 all.data<-read.table('household_power_consumption.txt',header=TRUE,sep=';',dec='.',na.strings = '?')
 
 plot.data<-subset(all.data,all.data$Date=='1/2/2007' | all.data$Date=='2/2/2007')
